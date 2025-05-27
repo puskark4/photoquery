@@ -1,0 +1,108 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Theme - Clean & Vibrant */
+    --background: 0 0% 98%; /* Almost white */
+    --foreground: 220 25% 15%; /* Dark blue/charcoal text */
+
+    --card: 0 0% 100%; /* White cards */
+    --card-foreground: 220 25% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 15%;
+
+    --primary: 250 65% 55%; /* Strong, modern blue/indigo */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
+
+    --secondary: 220 15% 94%; /* Very light cool gray */
+    --secondary-foreground: 220 25% 25%;
+
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 330 80% 60%; /* Vibrant pink/rose */
+    --accent-foreground: 0 0% 100%; /* White text on accent */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 10% 88%;
+    --input: 220 10% 92%;
+    --ring: 250 70% 65%; /* Lighter primary for focus */
+
+    --chart-1: 250 65% 55%; /* Primary */
+    --chart-2: 330 80% 60%; /* Accent */
+    --chart-3: 180 70% 45%; /* A teal */
+    --chart-4: 45 90% 55%;  /* An orange */
+    --chart-5: 275 60% 65%; /* A purple */
+    --radius: 0.5rem;
+
+    /* Default Sidebar colors for light theme (can be customized if needed) */
+    --sidebar-background: 220 15% 97%;
+    --sidebar-foreground: 220 25% 20%;
+    --sidebar-primary: 250 65% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 15% 92%;
+    --sidebar-accent-foreground: 220 25% 15%;
+    --sidebar-border: 220 10% 85%;
+    --sidebar-ring: 250 70% 65%;
+  }
+
+  .dark {
+    /* Dark Theme - Deep & Striking */
+    --background: 220 25% 12%; /* Deep cool dark blue */
+    --foreground: 220 15% 90%; /* Light cool gray text */
+
+    --card: 220 25% 15%; /* Slightly lighter than bg */
+    --card-foreground: 220 15% 90%;
+    --popover: 220 25% 15%;
+    --popover-foreground: 220 15% 90%;
+
+    --primary: 170 80% 45%; /* Vibrant teal */
+    --primary-foreground: 220 25% 10%; /* Dark text on teal */
+
+    --secondary: 220 20% 25%; /* Lighter cool gray for secondary */
+    --secondary-foreground: 220 15% 80%;
+
+    --muted: 220 20% 20%;
+    --muted-foreground: 220 15% 65%;
+
+    --accent: 275 70% 60%; /* Striking violet/purple */
+    --accent-foreground: 0 0% 98%; /* Very light text on accent */
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 20% 30%;
+    --input: 220 20% 22%;
+    --ring: 170 80% 55%; /* Lighter primary for focus */
+    
+    --chart-1: 170 80% 45%; /* Primary */
+    --chart-2: 275 70% 60%; /* Accent */
+    --chart-3: 210 70% 55%; /* A lighter blue */
+    --chart-4: 30 85% 60%;  /* A coral/orange */
+    --chart-5: 130 60% 50%; /* A green */
+
+    /* Sidebar colors for dark theme */
+    --sidebar-background: 220 25% 10%;
+    --sidebar-foreground: 220 15% 85%;
+    --sidebar-primary: 170 80% 45%;
+    --sidebar-primary-foreground: 220 25% 10%;
+    --sidebar-accent: 220 20% 20%;
+    --sidebar-accent-foreground: 220 15% 90%;
+    --sidebar-border: 220 20% 25%;
+    --sidebar-ring: 170 80% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
